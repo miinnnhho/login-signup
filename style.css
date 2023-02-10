@@ -1,81 +1,94 @@
 body {
-    background: #ffffff;
-    
+  background-image: url('back1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
-  justify-content: center; /*위 아래를 센터로 모아줌*/
-  align-items: center; /*양 옆을 센터로 모아줌*/
-  flex-direction: column; /*flex의 방향을 column밑으로 만들어줌.*/
+  justify-content: center;
+  /*위 아래를 센터로 모아줌*/
+  align-items: center;
+  /*양 옆을 센터로 모아줌*/
+  flex-direction: column;
+  /*flex의 방향을 column밑으로 만들어줌.*/
   font-family: 'Montserrat', sans-serif;
+  /* 좀 무난한 글씨체 */
   height: 100vh;
   margin: -20px 0 50px;
 }
 
 h1 {
-    font-weight: bold;
-    margin: 30;
-  }
+  font-weight: bold;
+  margin: 30;
+  text-align: center;
+  margin-bottom: 10px;
+}
 
-  button {
-    border-radius: 20px;
-    border: 1px solid #FF4B2B;
-    background-color: #FF4B2B;
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 12px 45px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: transform 80ms ease-in;
-  }
-  input {
-    background-color: #eee;
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
-    width: 100%;
-  }
-  a {
-    border-radius: 20px;
-    border: 1px solid #FF4B2B;
-    background-color: #FF4B2B;
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 12px 45px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: transform 80ms ease-in;
-  }
+button {
+  border-radius: 20px;
+  border: 1px solid #64b1ef;
+  background-color: #64b1ef;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+  width: 350px;
+}
 
-  .overlay-panel {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    top: 0;
-    height: 100%;
-    width: 50%;
-    transform: translateX(0);
-    transition: transform 0.6s ease-in-out;
-  }
-  
-  .overlay-left {
-    transform: translateX(-20%);
-  }
-  
-  .container.right-panel-active .overlay-left {
-    transform: translateX(0);
-  }
-  
-  .overlay-right {
-    right: 0;
-    transform: translateX(0);
-  }
-  
-  .container.right-panel-active .overlay-right {
-    transform: translateX(20%);
-  }
-  
+button:hover {
+  transform: translate(0, -3px);
+}
+
+input {
+  background-color: #d8e8fa;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 90%;
+  border-radius: 20px;
+
+}
+
+a {
+  border-radius: 20px; /* 로그인 회원가입 버튼  둥글기*/
+  border: 1px solid #64b1ef;
+  background-color: #64b1ef;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  /*링크여도 밑에 줄 안 생기게 해 줌*/
+  transition: transform 80ms ease-in;
+}
+
+a:hover {
+  transform: translate(0, -3px);
+}
+
+.flex-container {
+  padding: 8%;
+  padding-top: 40px;
+  border-radius: 33px;
+  /* background: #a9caf1; */
+  margin-top: 77px;
+  margin-left: 820px;
+}
+/* Sign Up page */
+.SignUp {
+  margin-top: 77px;
+  margin-left: 834px;
+  width: 350px;
+  margin-bottom: 30px;
+}
+/* Log In page */
+.LogIn {
+  margin-top: 77px;
+  margin-left: 834px;
+  width: 350px;
+  margin-bottom: 30px;
+}
