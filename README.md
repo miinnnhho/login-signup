@@ -1,3 +1,4 @@
-2023.01.24
-간단한 로그인 / 회원가입 기능을 만들어 보았다.
-유튜브 강의를 참고하여 작성한 것으로 아주 간단한 기능만 포함이 되어있다.
+
+(2023.01.24) I made a simple membership and login function page.
+<br>
+(2023.02.10) I added a background picture and divided the files that were gathered in the index file into detail.
